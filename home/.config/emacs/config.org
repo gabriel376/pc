@@ -1,0 +1,2009 @@
+* Cheatsheet
+** Boomark
+|---------+---------------------+------------------|
+| Key     | Function            | Description      |
+|---------+---------------------+------------------|
+| C-x r m | bookmark-set        | Set bookmark     |
+| C-x r b | bookmark-jump       | Jump to bookmark |
+| C-x r l | bookmark-bmenu-list | List bookmarks   |
+|---------+---------------------+------------------|
+
+** Buffer
+|-----------+----------------------------+---------------------------|
+| Key       | Function                   | Description               |
+|-----------+----------------------------+---------------------------|
+| C-x C-s   | save-buffer                | Save buffer               |
+| C-x s     | save-some-buffers          | Save all buffers          |
+| C-x b     | switch-to-buffer           | Switch to buffer          |
+| C-x right | next-buffer                | Switch to next buffer     |
+| C-x left  | previous-buffer            | Switch to previous buffer |
+| C-x C-w   | write-file                 | Write buffer to file      |
+| C-x C-f   | find-file                  | Open file or empty buffer |
+| C-z r     | gabriel-open-recent-file   | Open recent file          |
+| F5        | gabriel-buffer-revert      | Revert buffer             |
+| C-x k     | gabriel-buffer-kill        | Kill buffer               |
+| C-z b d   | gabriel-buffer-file-delete | Delete buffer and file    |
+| C-z b r   | gabriel-buffer-file-rename | Rename buffer and file    |
+| C-z b s   | gabriel-buffer-sudo        | Edit buffer as root       |
+| C-z b k o | gabriel-buffer-kill-other  | Kill other buffers        |
+| C-z b k a | gabriel-buffer-kill-all    | Kill all buffers          |
+|-----------+----------------------------+---------------------------|
+** Calendar
+|-----+--------------------------------+--------------------------------|
+| Key | Function                       | Description                    |
+|-----+--------------------------------+--------------------------------|
+| .   | calendar-goto-today            | Go to today                    |
+| d   | diary-view-entries             | View diary entries             |
+| >   | calendar-scroll-left           | Scroll left                    |
+| <   | calendar-scroll-right          | Scroll right                   |
+| i d | diary-insert-entry             | Add entry to diary             |
+| i w | diary-insert-weekly-entry      | Add weekly entry do diary      |
+| i m | diary-insert-monthly-entry     | Add monthly entry to diary     |
+| i y | diary-insert-yearly-entry      | Add yearly entry to diary      |
+| i a | diary-insert-anniversary-entry | Add anniversary entry to diary |
+| i b | diary-insert-block-entry       | Add block entry to diary       |
+| i c | diary-insert-cyclic-entry      | Add cyclic entry to diary      |
+| q   | calendar-exit                  | Exit calendar                  |
+|-----+--------------------------------+--------------------------------|
+
+** Command
+|--------------+--------------------------+--------------------------------------------|
+| Key          | Function                 | Description                                |
+|--------------+--------------------------+--------------------------------------------|
+| C-u          | universal-argument       | Universal argument for next command        |
+| C-u - number | universal-argument       | Negative numeric argument for next command |
+| C-u number   | universal-argument       | Positive numeric argument for next command |
+| M-x          | execute-extended-command | Execute command                            |
+| M-:          | eval-expression          | Eval expression                            |
+| C-x M-:      | repeat-complex-command   | Edit and execute last command              |
+| C-x z        | repeat                   | Repeat last command                        |
+| z            |                          | Repeat                                     |
+|--------------+--------------------------+--------------------------------------------|
+
+** Comment
+|---------+--------------+-------------------------------|
+| Key     | Function     | Description                   |
+|---------+--------------+-------------------------------|
+| C-x C-; | comment-line | Comment line                  |
+| M-;     | comment-dwim | Add comment to line or region |
+|---------+--------------+-------------------------------|
+
+** Compilation
+|---------+------------------+------------------|
+| Key     | Function         | Description      |
+|---------+------------------+------------------|
+| C-c C-k | kill-compilation | Kill compilation |
+| g       | recompile        | Recompile        |
+|---------+------------------+------------------|
+
+** Config
+|---------+-----------------------+--------------------|
+| Key     | Function              | Description        |
+|---------+-----------------------+--------------------|
+| C-z c o | gabriel-config-open   | Open config file   |
+| C-z c r | gabriel-config-reload | Reload config file |
+|---------+-----------------------+--------------------|
+
+** DAbbrev
+|-----+------------------------+-------------|
+| Key | Function               | Description |
+|-----+------------------------+-------------|
+| M-/ | gabriel-dabbrev-expand | Expand word |
+|-----+------------------------+-------------|
+
+** Diary
+|---------+--------------------+-----------------|
+| Key     | Function           | Description     |
+|---------+--------------------+-----------------|
+| C-z d o | gabriel-diary-open | Open diary file |
+|---------+--------------------+-----------------|
+
+** Dired
+|--------+------------------------------+-----------------------------|
+| Key    | Function                     | Description                 |
+|--------+------------------------------+-----------------------------|
+| C-x d  | dired                        | Open dired                  |
+| q      | quit-window                  | Quit                        |
+| g      | revert-buffer                | Refresh                     |
+| +      | dired-create-directory       | Create directory            |
+| (      | dired-hide-details-mode      | Toggle details              |
+| return | dired-find-file              | Open                        |
+| o      | dired-find-file-other-window | Open in other window        |
+| ^      | dired-up-directory           | Up directory                |
+| m      | dired-mark                   | Mark                        |
+| % m    | dired-mark-files-regexp      | Mark by regexp              |
+| t      | dired-toggle-marks           | Toggle marks                |
+| U      | dired-unmark-all-marks       | Unmark all                  |
+| u      | dired-unmark                 | Unmark                      |
+| i      | dired-maybe-insert-subdir    | Insert subdirectory         |
+| $      | dired-hide-subdir            | Hide subdirectory           |
+| A      | dired-do-find-regexp         | Find regexp in marked files |
+| s      | dired-sort-toggle-or-edit    | Togggle sort                |
+|--------+------------------------------+-----------------------------|
+
+** Edit
+|-----------+------------------------------------+-----------------------------------------|
+| Key       | Function                           | Description                             |
+|-----------+------------------------------------+-----------------------------------------|
+| C-/       | undo-only                          | Undo                                    |
+| C-M-/     | undo-redo                          | Redo                                    |
+| M-space   | cycle-spacing                      | Cycle spacing                           |
+| M-up      | gabriel-move-text-up               | Move line or region up                  |
+| M-down    | gabriel-move-text-down             | Move line or region down                |
+| M-left    | gabriel-move-text-left             | Move word or region left                |
+| M-right   | gabriel-move-text-right            | Move word or region right               |
+| C-M-up    | gabriel-join-text-up               | Join line or region up                  |
+| C-M-down  | gabriel-join-text-down             | Join line or region down                |
+| C-+       | gabriel-increment-number           | Increment number                        |
+| C--       | gabriel-decrement-number           | Decrement number                        |
+| M-+       | gabriel-increment-char             | Increment char                          |
+| M--       | gabriel-decrement-char             | Decrement char                          |
+| M-z       | zap-up-to-char                     | Kill up to char                         |
+| C-z d t   | gabriel-duplicate                  | Duplicate line or region                |
+| t         |                                    | Repeat                                  |
+| c         |                                    | Comment                                 |
+| C-z t c   | gabriel-toggle-case                | Toggle case of word or region           |
+| c         |                                    | Repeat                                  |
+| C-z i p ( | gabriel-insert-pair-parentheses    | Insert pair of () around word or region |
+| C-z i p { | gabriel-insert-pair-braces         | Insert pair of {} around word or region |
+| C-z i p [ | gabriel-insert-pair-brackets       | Insert pair of [] around word or region |
+| C-z i p ' | gabriel-insert-pair-single-quotes  | Insert pair of '' around word or region |
+| C-z i p " | gabriel-insert-pair-double-quotes  | Insert pair of "" around word or region |
+| C-z i p < | gabriel-insert-pair-angle-brackets | Insert pair of <> around word or region |
+| C-z d p ( | gabriel-delete-pair-parentheses    | Delete pair of () around word or region |
+| C-z d p { | gabriel-delete-pair-braces         | Delete pair of {} around word or region |
+| C-z d p [ | gabriel-delete-pair-brackets       | Delete pair of [] around word or region |
+| C-z d p ' | gabriel-delete-pair-single-quotes  | Delete pair of '' around word or region |
+| C-z d p " | gabriel-delete-pair-double-quotes  | Delete pair of "" around word or region |
+| C-z d p < | gabriel-delete-pair-angle-brackets | Delete pair of <> around word or region |
+| C-o       | open-line                          | Insert new line after point             |
+| C-M-o     | split-line                         | Split line vertically                   |
+| C-x C-o   | delete-blank-lines                 | Delete blank lines                      |
+|-----------+------------------------------------+-----------------------------------------|
+
+** EShell
+|---------+---------------------------------+--------------------------|
+| Key     | Function                        | Description              |
+|---------+---------------------------------+--------------------------|
+| C-c C-r | eshell-show-output              | Go to last output        |
+| C-c C-l | eshell-list-history             | List command history     |
+| C-c C-s | list-processes                  | List processes           |
+| M-r     | gabriel-eshell-complete-history | Complete command history |
+|---------+---------------------------------+--------------------------|
+
+** Help
+|---------+----------------------------------+--------------------------------------|
+| Key     | Function                         | Description                          |
+|---------+----------------------------------+--------------------------------------|
+| C-h C-h | help-for-help                    | Help for help                        |
+| C-h C-a | about-emacs                      | About Emacs                          |
+| C-h t   | help-with-tutorial               | Emacs tutorial                       |
+| C-h C-n | view-emacs-news                  | View Emacs news                      |
+| C-h a   | apropos-command                  | Search commands                      |
+| C-h d   | apropos-documentation            | Search documentation                 |
+| C-h e   | view-echo-area-messages          | View echo area messages              |
+| C-h i   | info                             | View info                            |
+| C-h F   | Info-goto-emacs-command-node     | View command info node               |
+| C-h K   | Info-goto-emacs-key-command-node | View key info node                   |
+| C-h l   | view-lossage                     | View last executed keys and commands |
+| C-h w   | where-is                         | View command key                     |
+| C-h p   | finder-by-keyword                | Find packages                        |
+| C-h b   | describe-bindings                | Describe bindings                    |
+| C-h o   | describe-symbol                  | Describe symbol                      |
+| C-h k   | describe-key                     | Describe key                         |
+| C-h c   | describe-key-briefly             | Describe key briefly                 |
+| C-h v   | describe-variable                | Descrive variable                    |
+| C-h f   | describe-function                | Describe function                    |
+| C-h P   | describe-package                 | Describe package                     |
+| C-h m   | describe-mode                    | Describe mode                        |
+| C-h h   | view-hello-file                  | View hello file                      |
+|---------+----------------------------------+--------------------------------------|
+
+** Hideshow
+|---------+---------------+-----------------|
+| Key     | Function      | Description     |
+|---------+---------------+-----------------|
+| C-z M-+ | hs-show-all   | Show all blocks |
+| C-z M-- | hs-hide-all   | Hide all blocks |
+| C-z C-+ | hs-show-block | Show block      |
+| C-z C-- | hs-hide-block | Hide block      |
+|---------+---------------+-----------------|
+
+** IBuffer
+|---------+-----------------------------------+-----------------------------------------|
+| Key     | Function                          | Description                             |
+|---------+-----------------------------------+-----------------------------------------|
+| C-x C-b | ibuffer                           | Open ibuffer                            |
+| q       | quit-window                       | Quit                                    |
+| g       | ibuffer-update                    | Refresh                                 |
+| ,       | ibuffer-toggle-sorting-mode       | Toggle sorting mode                     |
+| O       | ibuffer-do-occur                  | Occur in marked buffers                 |
+| d       | ibuffer-mark-for-delete           | Mark buffer for delete                  |
+| x       | ibuffer-do-kill-on-deletion-marks | Kill buffers marked for delete          |
+| D       | ibuffer-do-delete                 | Kill marked buffers                     |
+| t       | ibuffer-toggle-marks              | Toggle marks                            |
+| I       | ibuffer-do-query-replace-regexp   | Query replace regegxp in marked buffers |
+| r       | ibuffer-do-replace-regexp         | Replace regexp in marked buffers        |
+| `       | ibuffer-switch-format             | Switch display format                   |
+| U       | ibuffer-unmark-all-marks          | Unmark all                              |
+| u       | ibuffer-unmark-forward            | Unmark                                  |
+| s i     | ibuffer-invert-sorting            | Invert sorting order                    |
+|---------+-----------------------------------+-----------------------------------------|
+
+** ISpell
+|-----+-------------+---------------------|
+| Key | Function    | Description         |
+|-----+-------------+---------------------|
+| M-$ | ispell-word | Check work spelling |
+|-----+-------------+---------------------|
+
+** Indent
+|---------+-----------------------+------------------------|
+| Key     | Function              | Description            |
+|---------+-----------------------+------------------------|
+| C-x tab | indent-rigidly        | Indent region manually |
+| C-M-\   | indent-region         | Indent region          |
+| C-z i b | gabriel-indent-buffer | Indent buffer          |
+|---------+-----------------------+------------------------|
+
+** Kill Ring
+|---------+-----------------------+--------------------------------|
+| Key     | Function              | Description                    |
+|---------+-----------------------+--------------------------------|
+| C-M-w   | append-next-kill      | Append or prepend to kill ring |
+| C-w     | kill-region           | Kill region                    |
+| M-w     | kill-ring-save        | Copy region                    |
+| C-z c w | gabriel-copy-word     | Copy word                      |
+| C-z c l | gabriel-copy-line     | Copy line                      |
+| C-z c f | gabriel-copy-function | Copy function                  |
+| C-z c b | gabriel-copy-buffer   | Copy buffer                    |
+| C-y     | yank                  | Yank                           |
+| M-y     | gabriel-yank-pop      | Yank or yank pop               |
+|---------+-----------------------+--------------------------------|
+
+** Macro
+|-----------------+-----------------------------+--------------------------------------|
+| Key             | Function                    | Description                          |
+|-----------------+-----------------------------+--------------------------------------|
+| C-x C-k C-s     | kmacro-start-macro          | Start macro                          |
+| C-x C-k C-k     | kmacro-end-and-call-macro   | End or call macro                    |
+| C-x C-k tab     | kmacro-insert-counter       | Insert counter then increment it     |
+| C-u C-x C-k tab | kmacro-insert-counter       | Insert counter                       |
+| C-x C-k C-a     | kmacro-add-counter          | Add to counter                       |
+| C-x C-k C-c     | kmacro-set-counter          | Set counter                          |
+| C-x C-k C-e     | kmacro-edit-macro-repeat    | Edit last macro                      |
+| C-x C-k C-v     | kmacro-bind-to-key          | Bind macro to key                    |
+| C-x C-k l       | kmacro-edit-lossage         | Edit most recent keystrokes as macro |
+| C-x C-k x       | kmacro-to-register          | Store last macro in register         |
+| C-x C-k r       | apply-macro-to-region-lines | Apply macro to region lines          |
+|-----------------+-----------------------------+--------------------------------------|
+
+** Mark
+|-----------------+-------------------------+-------------------------|
+| Key             | Function                | Description             |
+|-----------------+-------------------------+-------------------------|
+| C-space         | set-mark-command        | Set mark                |
+| C-space C-space | set-mark-command        | Push mark at point      |
+| C-u C-space     | set-mark-command        | Pop and jump to mark    |
+| C-x h           | mark-whole-buffer       | Mark buffer             |
+| M-@             | mark-word               | Mark word               |
+| M-h             | mark-paragraph          | Mark paragraph          |
+| C-M-h           | mark-defun              | Mark function           |
+| C-M-@           | mark-sexp               | Mark sexp               |
+| C-x space       | rectangle-mark-mode     | Mark rectangle          |
+| C-x C-x         | exchange-point-and-mark | Exchange point and mark |
+| C-z m           | gabriel-mark            | Mark                    |
+| (               |                         | Mark between ()         |
+| {               |                         | Mark between {}         |
+| [               |                         | Mark between []         |
+| '               |                         | Mark between ''         |
+| "               |                         | Mark between ""         |
+| <               |                         | Mark between <>         |
+| l               |                         | Mark line               |
+| w               |                         | Mark word               |
+| f               |                         | Mark function           |
+| p               |                         | Mark paragraph          |
+| b               |                         | Mark buffer             |
+| d               |                         | Duplicate               |
+| c               |                         | Comment                 |
+| e               |                         | Expand mark             |
+|-----------------+-------------------------+-------------------------|
+
+** Minibuffer
+|-----+--------------------------+---------------------------------|
+| Key | Function                 | Description                     |
+|-----+--------------------------+---------------------------------|
+| M-n | previous-history-element | Select previous history element |
+| M-p | next-history-element     | Select next history element     |
+| M-v | switch-to-completions    | Switch to completions window    |
+|-----+--------------------------+---------------------------------|
+
+** Narrow
+|---------+------------------+--------------------|
+| Key     | Function         | Description        |
+|---------+------------------+--------------------|
+| C-x n d | narrow-to-defun  | Narrow to function |
+| C-x n n | narrow-to-region | Narrow to region   |
+| C-x n w | widen            | Remove narrow      |
+|---------+------------------+--------------------|
+
+** Navigation
+|---------+--------------------------------+-----------------------------------------|
+| Key     | Function                       | Description                             |
+|---------+--------------------------------+-----------------------------------------|
+| C-b     | backward-char                  | Go to previous char                     |
+| C-f     | forward-char                   | Go to next char                         |
+| M-b     | backward-word                  | Go to previous word                     |
+| M-f     | forward-word                   | Go to next word                         |
+| C-p     | previous-line                  | Go to previous line                     |
+| C-n     | next-line                      | Go to next line                         |
+| M-n     | scroll-up-line                 | Scroll up line                          |
+| M-p     | scroll-down-line               | Scroll down line                        |
+| M-m     | back-to-indentation            | Go to first non-whitespace char on line |
+| C-a     | move-beginning-of-line         | Go to beginning of line                 |
+| C-e     | move-end-of-line               | Go to end of line                       |
+| M-a     | backward-sentence              | Go to beginning of sentence             |
+| M-e     | forward-sentence               | Go to end of sentence                   |
+| M-{     | backward-paragraph             | Go to next paragraph                    |
+| M-}     | forward-paragraph              | Go to previous paragraph                |
+| C-M-a   | beginning-of-defun             | Go to beginning of function             |
+| C-M-e   | end-of-defun                   | Go to end of function                   |
+| C-v     | scroll-up-command              | Scroll up                               |
+| M-v     | scroll-down-command            | Scroll down                             |
+| M-<     | beginning-of-buffer            | Go to beginning of buffer               |
+| M->     | end-of-buffer                  | Go to end of buffer                     |
+| C-l     | recenter-top-bottom            | Cycle current line position on window   |
+| M-r     | move-to-window-line-top-bottom | Cycle cursor position on window         |
+| M-g g   | goto-line                      | Go to line number                       |
+| M-g tab | move-to-column                 | Go to column number                     |
+| C-z i m | imenu                          | Open imenu                              |
+| C-z g   | gabriel-go-delim               | Go to delimiter                         |
+| (       |                                | Go to (                                 |
+| )       |                                | Go to )                                 |
+| {       |                                | Go to {                                 |
+| }       |                                | Go to }                                 |
+| [       |                                | Go to [                                 |
+| ]       |                                | Go to ]                                 |
+| <       |                                | Go to <                                 |
+| >       |                                | Go to >                                 |
+|---------+--------------------------------+-----------------------------------------|
+
+** Org Mode
+|------------+-------------------------------+----------------------|
+| Key        | Function                      | Description          |
+|------------+-------------------------------+----------------------|
+| M-S-return | org-insert-todo-heading       | Add TODO heading     |
+| C-c C-l    | org-insert-link               | Insert link          |
+| C-c C-o    | org-open-at-poink             | Open at point        |
+| C-c C-d    | org-deadline                  | Insert deadline time |
+| C-c C-s    | org-schedule                  | Insert schedule time |
+| C-c C-e    | org-export-dispatch           | Export               |
+| C-c '      | org-edit-special              | Edit thing at point  |
+| C-c C-q    | org-set-tags-command          | Set tags             |
+| C-c C-,    | org-insert-structure-template | Insert template      |
+|------------+-------------------------------+----------------------|
+
+** Project
+|---------+------------------------------+--------------------------------|
+| Key     | Function                     | Description                    |
+|---------+------------------------------+--------------------------------|
+| C-x p p | project-switch-project       | Switch to another project      |
+| C-x p f | project-find-file            | Find project file              |
+| C-x p g | project-find-regexp          | Find regexp in project files   |
+| C-x p r | project-query-replace-regexp | Query replace in project files |
+| C-x p c | project-compile              | Compile project                |
+| C-x p d | project-dired                | Dired in project root          |
+| C-x p k | project-kill-buffers         | Kill project buffers           |
+| C-x p e | project-eshell               | Eshell in project root         |
+| C-x p s | project-shell                | Shell in project root          |
+| C-x p v | project-vc-dir               | Version control status         |
+| C-x p b | project-switch-to-buffer     | Switch to project buffer       |
+|---------+------------------------------+--------------------------------|
+
+** Quit
+|---------+----------------------------+--------------|
+| Key     | Function                   | Description  |
+|---------+----------------------------+--------------|
+| C-g     | keyboard-quit              | Quit command |
+| esc     | keyboard-quit              | Quit command |
+| C-x C-c | save-buffers-kill-terminal | Quit Emacs   |
+|---------+----------------------------+--------------|
+
+** Search and Replace
+|------------------+---------------------------------+----------------------------------------|
+| Key              | Function                        | Description                            |
+|------------------+---------------------------------+----------------------------------------|
+| C-s              | isearch-forward                 | Search forward                         |
+| C-r              | isearch-backward                | Search backward                        |
+| M-s w            | isearch-forward-word            | Search word                            |
+| M-s _            | isearch-forward-symbol          | Search symbol                          |
+| M-s .            | isearch-forward-symbol-at-point | Search symbol at point                 |
+| M-s space        | isearch-toggle-lax-whitespace   | Toggle isearch lax-whitespace          |
+| M-%              | query-replace                   | Replace query                          |
+| C-u M-%          | query-replace                   | Replace word                           |
+| M-s h r          | highlight-regexp                | Highlight regexp matches               |
+| M-s h l          | highlight-lines-matching-regexp | Highlight lines regexp matches         |
+| M-s h .          | highlight-symbol-at-point       | Highlight symbol at point              |
+| M-s h u          | unhighlight-regexp              | Unhighlight regexp                     |
+| M-s o            | occur                           | Show regexp matches                    |
+| C-u number M-s o | occur                           | Show regexp matches with context lines |
+|------------------+---------------------------------+----------------------------------------|
+
+** Shell
+|------------+----------------------------+------------------------------------------------|
+| Key        | Function                   | Description                                    |
+|------------+----------------------------+------------------------------------------------|
+| M-!        | shell-command              | Run shell command                              |
+| C-u M-!    | shell-command              | Insert shell output at point                   |
+| M-vert     | shell-command-on-region    | Run shell command with region as input         |
+| C-u M-vert | shell-command-on-region    | Replace region with shell output               |
+| M-&        | async-shell-command        | Run async shell command                        |
+|------------+----------------------------+------------------------------------------------|
+
+** Tab Bar
+|--------------+----------------------------+------------------|
+| Key          | Function                   | Description      |
+|--------------+----------------------------+------------------|
+| C-x t 0      | tab-close                  | Close tab        |
+| C-x t 1      | tab-close-other            | Close other tabs |
+| C-x t 2      | tab-new                    | New tab          |
+| C-x t m      | tab-move                   | Move tab         |
+| C-x t o      | tab-next                   | Next tab         |
+| C-x t r      | tab-rename                 | Rename tab       |
+| C-x t return | tab-bar-select-tab-by-name | Select tab       |
+|--------------+----------------------------+------------------|
+
+** Term
+|---------+----------------+-------------|
+| Key     | Function       | Description |
+|---------+----------------+-------------|
+| C-c C-j | term-line-mode | Line mode   |
+| C-c C-k | term-char-mode | Char mode   |
+|---------+----------------+-------------|
+
+** Version Control
+|-------------+-------------------------+------------------------|
+| Key         | Function                | Description            |
+|-------------+-------------------------+------------------------|
+| C-x v d     | vc-dir                  | Show status            |
+| C-x v v     | vc-next-action          | Run next action        |
+| C-x v r     | vc-retrieve-tag         | Retrieve tag or branch |
+| C-x v s     | vc-create-tag           | Create tag             |
+| C-u C-x v s | vc-create-tag           | Create branch          |
+|             | vc-pull                 | Pull changes           |
+| C-x v m     | vc-merge                | Merge changes          |
+| C-x v u     | vc-revert               | Revert changes         |
+| m           | vc-dir-mark             | Mark                   |
+| M           | vc-dir-mark-all-files   | Mark all               |
+| u           | vc-dir-unmark           | Unmark                 |
+| U           | vc-dir-unmark-all-files | Unmark all             |
+| x           | vc-dir-hide-up-to-date  | Hide up-to-date        |
+|-------------+-------------------------+------------------------|
+
+** Window
+|---------+----------------------------+-----------------------|
+| Key     | Function                   | Description           |
+|---------+----------------------------+-----------------------|
+| C-x 0   | gabriel-window-delete      | Delete window         |
+| C-x 2   | gabriel-window-split-below | Split window below    |
+| C-x 3   | gabriel-window-split-right | Split window right    |
+| C-z w s | window-swap-states         | Swap windows          |
+| C-x o   | other-window               | Select another window |
+| C-left  | windmove-left              | Select left window    |
+| C-right | windmove-right             | Select right window   |
+| C-up    | windmove-up                | Select up window      |
+| C-down  | windmove-down              | Select down window    |
+|---------+----------------------------+-----------------------|
+
+* Start
+#+BEGIN_SRC emacs-lisp
+(setq-default inhibit-startup-screen t
+              initial-scratch-message nil
+              initial-major-mode 'org-mode)
+
+(global-unset-key (kbd "C-z"))
+(global-unset-key (kbd "C-x C-z"))
+#+END_SRC
+
+* Appointments
+#+BEGIN_SRC emacs-lisp
+(setq-default appt-audible nil
+              appt-message-warning-time 15
+              appt-display-interval 5)
+
+(appt-activate 1)
+#+END_SRC
+
+* Auth Source
+#+BEGIN_SRC emacs-lisp
+(setq-default auth-source-save-behavior nil)
+#+END_SRC
+
+* Backup
+#+BEGIN_SRC emacs-lisp
+(setq-default make-backup-files nil)
+#+END_SRC
+
+* Bell
+#+BEGIN_SRC emacs-lisp
+(setq-default ring-bell-function 'ignore)
+#+END_SRC
+
+* Buffer
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-buffer-revert ()
+  "Revert buffer"
+  (interactive)
+  (revert-buffer t t))
+
+(defun gabriel-buffer-kill ()
+  "Kill current buffer"
+  (interactive)
+  (balance-windows)
+  (kill-buffer (current-buffer)))
+
+(defun gabriel-buffer-kill-other ()
+  "Kill other buffers"
+  (interactive)
+  (delete-other-windows)
+  (mapc 'kill-buffer (cdr (buffer-list (current-buffer)))))
+
+(defun gabriel-buffer-kill-all ()
+  "Kill all buffers"
+  (interactive)
+  (delete-other-windows)
+  (mapc 'kill-buffer (buffer-list)))
+
+(defun gabriel-buffer-line-or-region ()
+  "Returns line or region contents"
+  (if (use-region-p)
+      (buffer-substring (region-beginning) (region-end))
+    (thing-at-point 'line)))
+
+(defun gabriel-buffer-total-lines ()
+  "Returns the total lines of buffer"
+  (- (line-number-at-pos (point-max)) 1))
+
+(defun gabriel-buffer-at-first-line-p ()
+  "Returns true if point is at first line of buffer"
+  (= (line-number-at-pos) 1))
+
+(defun gabriel-buffer-at-last-line-p ()
+  "Returns true if point is at last line of buffer"
+  (= (line-number-at-pos) (gabriel-buffer-total-lines)))
+
+(defun gabriel-buffer-is-project-p (buffer)
+  "Returns true if buffer is in some project"
+  (with-current-buffer buffer
+    (when (vc-root-dir)
+      t)))
+
+(defun gabriel-buffer-from-project-p (project buffer)
+  "Returns true if buffer is from project"
+  (string-prefix-p project
+                   (abbreviate-file-name (or (buffer-file-name buffer) ""))))
+
+(defun gabriel-buffer-file-delete ()
+  "Delete file and kill buffer"
+  (interactive)
+  (let ((filename (buffer-file-name)))
+    (when filename
+      (if (vc-backend filename)
+          (vc-delete-file filename)
+        (when (yes-or-no-p (format "Delete %s? " filename))
+          (delete-file filename delete-by-moving-to-trash)
+          (message "Deleted file %s" filename)
+          (kill-buffer))))))
+
+(defun gabriel-buffer-file-rename ()
+  "Rename buffer and file"
+  (interactive)
+  (let ((new-name (read-from-minibuffer "New name: " (or (buffer-file-name) (buffer-name)))))
+    (if (not (buffer-file-name))
+        (rename-buffer new-name)
+      (if (vc-root-dir)
+          (vc-rename-file (buffer-file-name) new-name)
+        (when (file-exists-p (buffer-file-name))
+          (make-directory (file-name-directory new-name) t)
+          (rename-file (buffer-file-name) new-name t))
+        (set-visited-file-name new-name t t)))))
+
+(defun gabriel-buffer-sudo ()
+  "Edit current buffer as root"
+  (interactive)
+  (when buffer-file-name
+    (find-alternate-file
+     (concat "/sudo:root@localhost:" buffer-file-name))))
+
+(setq-default uniquify-buffer-name-style 'forward
+              uniquify-strip-common-suffix nil
+              uniquify-separator "/"
+              uniquify-after-kill-buffer-p t)
+
+(global-auto-revert-mode 1)
+
+(global-set-key (kbd "<f5>") 'gabriel-buffer-revert)
+(global-set-key (kbd "C-x k") 'gabriel-buffer-kill)
+(global-set-key (kbd "C-z b d") 'gabriel-buffer-file-delete)
+(global-set-key (kbd "C-z b r") 'gabriel-buffer-file-rename)
+(global-set-key (kbd "C-z b s") 'gabriel-buffer-sudo)
+(global-set-key (kbd "C-z b k o") 'gabriel-buffer-kill-other)
+(global-set-key (kbd "C-z b k a") 'gabriel-buffer-kill-all)
+#+END_SRC
+
+* Calendar
+#+BEGIN_SRC emacs-lisp
+(setq-default calendar-date-style 'iso
+              calendar-week-start-day 1
+              calendar-mark-diary-entries-flag t
+              calendar-time-display-form '(24-hours ":" minutes (when time-zone (concat " (" time-zone ")"))))
+#+END_SRC
+
+* Column
+#+BEGIN_SRC emacs-lisp
+(setq-default fill-column 80)
+
+(global-display-fill-column-indicator-mode -1)
+#+END_SRC
+
+* Compilation
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-compilation-apply-ansi-color ()
+  (ansi-color-apply-on-region compilation-filter-start
+                              (point-max)))
+
+(setq-default compilation-scroll-output t)
+
+(add-hook 'compilation-filter-hook 'gabriel-compilation-apply-ansi-color)
+#+END_SRC
+
+* Config
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-config-open ()
+  "Open config file"
+  (interactive)
+  (find-file (expand-file-name "config.org" user-emacs-directory)))
+
+(defun gabriel-config-reload ()
+  "Reoad config file"
+  (interactive)
+  (load-file user-init-file))
+
+(global-set-key (kbd "C-z c o") 'gabriel-config-open)
+(global-set-key (kbd "C-z c r") 'gabriel-config-reload)
+#+END_SRC
+
+* Cursor
+#+BEGIN_SRC emacs-lisp
+(setq-default cursor-type 'box
+              cursor-in-non-selected-windows 'hollow
+              x-stretch-cursor t)
+
+(blink-cursor-mode -1)
+#+END_SRC
+
+* Custom
+#+BEGIN_SRC emacs-lisp
+(setq-default custom-file (expand-file-name "custom.el" user-emacs-directory))
+#+END_SRC
+
+* DAbbrev
+#+BEGIN_SRC emacs-lisp
+(require 'dabbrev)
+
+(defun gabriel-dabbrev-expand ()
+  "Expand dynamic abbreviation"
+  (interactive)
+  (message dabbrev--last-expansion)
+  (if (not (equal this-command last-command))
+      (dabbrev-expand nil)
+    (let* ((abbrev dabbrev--last-abbreviation)
+           (expansions (dabbrev--find-all-expansions abbrev t))
+           (expansion (completing-read "Expand with: " expansions nil t abbrev)))
+      (when expansion
+        (save-excursion (undo-only))
+        (insert (substring expansion (length abbrev)))))))
+
+(setq-default dabbrev-abbrev-char-regexp nil
+              dabbrev-abbrev-skip-leading-regexp nil
+              dabbrev-backward-only nil
+              dabbrev-case-distinction nil
+              dabbrev-case-fold-search nil
+              dabbrev-case-replace nil
+              dabbrev-check-other-buffers t
+              dabbrev-eliminate-newlines nil
+              dabbrev-upcase-means-case-search t)
+
+(global-set-key (kbd "M-/") 'gabriel-dabbrev-expand)
+#+END_SRC
+
+* Diary
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-diary-open ()
+  "Open diary file"
+  (interactive)
+  (find-file diary-file)
+  (diary-mode))
+
+(setq-default diary-number-of-entries 7
+              diary-header-line-flag nil
+              diary-file (expand-file-name "diary" user-emacs-directory)
+              diary-date-forms diary-iso-date-forms
+              diary-list-include-blanks t
+              diary-show-holidays-flag nil)
+
+(global-set-key (kbd "C-z d o") 'gabriel-diary-open)
+#+END_SRC
+
+* Dired
+#+BEGIN_SRC emacs-lisp
+(setq-default dired-listing-switches "-lhA"
+              dired-hide-details-hide-information-lines t)
+
+(add-hook 'dired-mode-hook 'dired-hide-details-mode)
+#+END_SRC
+
+* Echo Area
+#+BEGIN_SRC emacs-lisp
+(setq-default echo-keystrokes 0.1)
+#+END_SRC
+
+* EDiff
+#+BEGIN_SRC emacs-lisp
+(setq-default ediff-window-setup-function 'ediff-setup-windows-plain)
+#+END_SRC
+
+* Edit
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-map-char (fn)
+  "Map char at point to fn"
+  (cl-loop repeat (or current-prefix-arg 1) do
+           (let ((c (funcall fn (char-after))))
+             (when (characterp c)
+               (insert c)
+               (delete-char 1)
+               (backward-char)))))
+
+(defun gabriel-increment-char ()
+  "Increments char at point"
+  (interactive)
+  (gabriel-map-char '1+))
+
+(defun gabriel-decrement-char ()
+  "Decrements char at point"
+  (interactive)
+  (gabriel-map-char '1-))
+
+(defun gabriel-map-number (fn)
+  "Map number at point to fn"
+  (cl-loop repeat (or current-prefix-arg 1) do
+           (skip-chars-backward "-0123456789")
+           (when (looking-at "-?[0-9]+")
+             (replace-match (number-to-string (funcall fn (string-to-number (match-string 0))))))))
+
+(defun gabriel-increment-number ()
+  "Increments number at point"
+  (interactive)
+  (gabriel-map-number '1+))
+
+(defun gabriel-decrement-number ()
+  "Decrements number at point"
+  (interactive)
+  (gabriel-map-number '1-))
+
+(defun gabriel-move-line-up ()
+  "Move line up"
+  (unless (gabriel-buffer-at-first-line-p)
+    (cl-loop repeat (or current-prefix-arg 1) do
+             (let ((column (current-column)))
+               (transpose-lines 1)
+               (forward-line -2)
+               (move-to-column column)))))
+
+(defun gabriel-move-line-down ()
+  "Move line down"
+  (unless (gabriel-buffer-at-last-line-p)
+    (cl-loop repeat (or current-prefix-arg 1) do
+             (let ((column (current-column)))
+               (forward-line 1)
+               (transpose-lines 1)
+               (forward-line -1)
+               (move-to-column column)))))
+
+(defun gabriel-move-region (direction)
+  "Move region"
+  (let ((region (delete-and-extract-region (region-beginning) (region-end))))
+    (forward-line (* direction (or current-prefix-arg 1)))
+    (let ((position (point)))
+      (insert region)
+      (setq deactivate-mark nil)
+      (set-mark position))))
+
+(defun gabriel-move-text-up ()
+  "Move text or region up"
+  (interactive)
+  (if (use-region-p)
+      (gabriel-move-region -1)
+    (gabriel-move-line-up)))
+
+(defun gabriel-move-text-down ()
+  "Move text or region down"
+  (interactive)
+  (if (use-region-p)
+      (gabriel-move-region 1)
+    (gabriel-move-line-down)))
+
+(defun gabriel-move-region-right ()
+  "Move region right"
+  (let* ((beg1 (region-beginning))
+         (end1 (region-end))
+         (end2 (save-excursion (goto-char (region-end)) (forward-word 1) (point)))
+         (beg2 (save-excursion (goto-char end2) (backward-word 1) (point))))
+    (goto-char (min beg1 end1))
+    (transpose-regions beg1 end1 beg2 end2)
+    (setq deactivate-mark nil)
+    (set-mark (point))
+    (goto-char (+ (point) (- end1 beg1)))
+    (exchange-point-and-mark)))
+
+(defun gabriel-move-word-right ()
+  "Move word right"
+  (transpose-words 1))
+
+(defun gabriel-move-text-right ()
+  "Move text right"
+  (interactive)
+  (if (use-region-p)
+      (gabriel-move-region-right)
+    (gabriel-move-word-right)))
+
+(defun gabriel-move-region-left ()
+  "Move region left"
+  (let* ((beg1 (region-beginning))
+         (end1 (region-end))
+         (beg2 (save-excursion (goto-char (region-beginning)) (backward-word 1) (point)))
+         (end2 (save-excursion (goto-char beg2) (forward-word 1) (point))))
+    (goto-char (min beg1 end1))
+    (transpose-regions beg1 end1 beg2 end2)
+    (setq deactivate-mark nil)
+    (set-mark (point))
+    (goto-char (+ (point) (- end1 beg1)))
+    (exchange-point-and-mark)))
+
+(defun gabriel-move-word-left ()
+  "Move word left"
+  (transpose-words -1))
+
+(defun gabriel-move-text-left ()
+  "Move text left"
+  (interactive)
+  (if (use-region-p)
+      (gabriel-move-region-left)
+    (gabriel-move-word-left)))
+
+(defun gabriel-duplicate-region ()
+  "Duplicate region"
+  (interactive)
+  (kill-ring-save (region-beginning) (region-end))
+  (deactivate-mark)
+  (cl-loop repeat (or current-prefix-arg 1) do (yank)))
+
+(defun gabriel-duplicate ()
+  "Duplicate line or region"
+  (interactive)
+  (when (not (use-region-p))
+    (move-beginning-of-line 1)
+    (set-mark-command nil)
+    (move-end-of-line 1))
+  (gabriel-mark-expand)
+  (forward-line 1)
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "t") 'gabriel-duplicate-region)
+    (define-key map (kbd "c") 'comment-region)
+    (set-transient-map map t))
+  (gabriel-duplicate-region))
+
+(defun gabriel-join-text-up ()
+  "Join text up"
+  (interactive)
+  (call-interactively 'delete-indentation))
+
+(defun gabriel-join-text-down ()
+  "Join text down"
+  (interactive)
+  (if (use-region-p)
+      (gabriel-join-text-up)
+    (delete-indentation 1)))
+
+(defun gabriel-insert-pair (open close)
+  "Insert pair"
+  (save-excursion
+    (when (not (use-region-p))
+      (gabriel-mark-word))
+    (insert-pair nil open close)))
+
+(defun gabriel-insert-pair-parentheses ()
+  "Insert parentheses"
+  (interactive)
+  (gabriel-insert-pair "(" ")"))
+
+(defun gabriel-insert-pair-braces ()
+  "Insert braces"
+  (interactive)
+  (gabriel-insert-pair "{" "}"))
+
+(defun gabriel-insert-pair-brackets ()
+  "Insert brackets"
+  (interactive)
+  (gabriel-insert-pair "[" "]"))
+
+(defun gabriel-insert-pair-single-quotes ()
+  "Insert single quotes"
+  (interactive)
+  (gabriel-insert-pair "'" "'"))
+
+(defun gabriel-insert-pair-double-quotes ()
+  "Insert double quotes"
+  (interactive)
+  (gabriel-insert-pair "\"" "\""))
+
+(defun gabriel-insert-pair-angle-brackets ()
+  "Insert angle brackets"
+  (interactive)
+  (gabriel-insert-pair "<" ">"))
+
+(defun gabriel-delete-pair (open close)
+  "Delete pair"
+  (let ((beg (save-excursion (gabriel-go-prev-delim open close)))
+        (end (save-excursion (gabriel-go-next-delim open close))))
+    (save-excursion
+      (goto-char (- end 1))
+      (delete-char 1)
+      (goto-char beg)
+      (delete-char 1))))
+
+(defun gabriel-delete-pair-parentheses ()
+  "Delete parentheses"
+  (interactive)
+  (gabriel-delete-pair "(" ")"))
+
+(defun gabriel-delete-pair-braces ()
+  "Delete braces"
+  (interactive)
+  (gabriel-delete-pair "{" "}"))
+
+(defun gabriel-delete-pair-brackets ()
+  "Delete brackets"
+  (interactive)
+  (gabriel-delete-pair "[" "]"))
+
+(defun gabriel-delete-pair-single-quotes ()
+  "Delete single quotes"
+  (interactive)
+  (gabriel-delete-pair "'" "'"))
+
+(defun gabriel-delete-pair-double-quotes ()
+  "Delete double quotes"
+  (interactive)
+  (gabriel-delete-pair "\"" "\""))
+
+(defun gabriel-delete-pair-angle-brackets ()
+  "Delete angle brackets"
+  (interactive)
+  (gabriel-delete-pair "<" ">"))
+
+(defun gabriel-toggle-case ()
+  "Toggle string case"
+  (interactive)
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "c") 'gabriel-toggle-case)
+    (set-transient-map map))
+  (let* ((str (if (use-region-p)
+                  (buffer-substring (region-beginning) (region-end))
+                (word-at-point)))
+         (fn (cond ((string= str (upcase str))   'downcase-dwim)
+                   ((string= str (downcase str)) 'capitalize-dwim)
+                   (t                            'upcase-dwim))))
+    (save-excursion
+      (when (not (use-region-p))
+        (backward-to-word 1))
+      (funcall fn 1)
+      (setq deactivate-mark nil))))
+
+(put 'overwrite-mode 'disabled t)
+
+(global-set-key (kbd "C-/") 'undo-only)
+(global-set-key (kbd "C-M-/") 'undo-redo)
+(global-set-key (kbd "M-SPC") 'cycle-spacing)
+(global-set-key (kbd "M-<up>") 'gabriel-move-text-up)
+(global-set-key (kbd "M-<down>") 'gabriel-move-text-down)
+(global-set-key (kbd "M-<left>") 'gabriel-move-text-left)
+(global-set-key (kbd "M-<right>") 'gabriel-move-text-right)
+(global-set-key (kbd "C-M-<up>") 'gabriel-join-text-up)
+(global-set-key (kbd "C-M-<down>") 'gabriel-join-text-down)
+(global-set-key (kbd "C-+") 'gabriel-increment-number)
+(global-set-key (kbd "C--") 'gabriel-decrement-number)
+(global-set-key (kbd "M-+") 'gabriel-increment-char)
+(global-set-key (kbd "M--") 'gabriel-decrement-char)
+(global-set-key (kbd "M-z") 'zap-up-to-char)
+(global-set-key (kbd "C-z d t") 'gabriel-duplicate)
+(global-set-key (kbd "C-z t c") 'gabriel-toggle-case)
+(global-set-key (kbd "C-z i p (") 'gabriel-insert-pair-parentheses)
+(global-set-key (kbd "C-z i p {") 'gabriel-insert-pair-braces)
+(global-set-key (kbd "C-z i p [") 'gabriel-insert-pair-brackets)
+(global-set-key (kbd "C-z i p '") 'gabriel-insert-pair-single-quotes)
+(global-set-key (kbd "C-z i p \"") 'gabriel-insert-pair-double-quotes)
+(global-set-key (kbd "C-z i p <") 'gabriel-insert-pair-angle-brackets)
+(global-set-key (kbd "C-z d p (") 'gabriel-delete-pair-parentheses)
+(global-set-key (kbd "C-z d p {") 'gabriel-delete-pair-braces)
+(global-set-key (kbd "C-z d p [") 'gabriel-delete-pair-brackets)
+(global-set-key (kbd "C-z d p '") 'gabriel-delete-pair-single-quotes)
+(global-set-key (kbd "C-z d p \"") 'gabriel-delete-pair-double-quotes)
+(global-set-key (kbd "C-z d p <") 'gabriel-delete-pair-angle-brackets)
+#+END_SRC
+
+* EShell
+#+BEGIN_SRC emacs-lisp
+(require 'esh-module)
+(require 'em-banner)
+(require 'em-hist)
+
+(defun gabriel-eshell-complete-history ()
+  "Complete command history"
+  (interactive)
+  (let* ((commands (ring-elements eshell-history-ring))
+         (command (completing-read "Input history: " commands nil t)))
+    (when command
+      (insert command))))
+
+(setq-default eshell-banner-message "")
+
+(add-to-list 'eshell-modules-list 'eshell-tramp)
+
+(define-key eshell-hist-mode-map (kbd "M-r") 'gabriel-eshell-complete-history)
+#+END_SRC
+
+* Font Lock
+#+BEGIN_SRC emacs-lisp
+(global-font-lock-mode 1)
+#+END_SRC
+
+* Fringe
+#+BEGIN_SRC emacs-lisp
+(setq-default fringes-outside-margins nil
+              indicate-empty-lines nil
+              indicate-buffer-boundaries nil)
+
+(fringe-mode '(0 . 0))
+#+END_SRC
+
+* GUI
+#+BEGIN_SRC emacs-lisp
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(menu-bar-mode -1)
+
+(setq-default use-file-dialog nil
+              use-dialog-box nil)
+#+END_SRC
+
+* Gnus
+#+BEGIN_SRC emacs-lisp
+(setq-default gnus-select-method '(nnnil "")
+              gnus-secondary-select-methods '((nntp "news.gwene.org"))
+              gnus-thread-sort-functions '((not gnus-thread-sort-by-date)
+                                           (not gnus-thread-sort-by-number))
+              gnus-summary-line-format "%U%R    %-16,16&user-date;    %-25,25f    %B%s\n"
+              gnus-user-date-format-alist '((t . "%Y-%m-%d %H:%M"))
+              gnus-summary-thread-gathering-function 'gnus-gather-threads-by-references
+              gnus-sum-thread-tree-false-root "─┬► "
+              gnus-sum-thread-tree-indent " "
+              gnus-sum-thread-tree-single-indent ""
+              gnus-sum-thread-tree-leaf-with-other "├► "
+              gnus-sum-thread-tree-root ""
+              gnus-sum-thread-tree-single-leaf "└► "
+              gnus-sum-thread-tree-vertical "│")
+#+END_SRC
+
+* Help
+#+BEGIN_SRC emacs-lisp
+(setq-default apropos-do-all t)
+#+END_SRC
+
+* Hideshow
+#+BEGIN_SRC emacs-lisp
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+
+(global-set-key (kbd "C-z M-+") 'hs-show-all)
+(global-set-key (kbd "C-z M--") 'hs-hide-all)
+(global-set-key (kbd "C-z C-+") 'hs-show-block)
+(global-set-key (kbd "C-z C--") 'hs-hide-block)
+#+END_SRC
+
+* History
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-open-recent-file ()
+  "Open recent file"
+  (interactive)
+  (when-let ((file (completing-read "Find recent file: "
+                                    (mapcar #'abbreviate-file-name recentf-list)
+                                    nil
+                                    t)))
+    (find-file file)))
+
+(setq-default recentf-auto-cleanup 'never
+              recentf-max-saved-items 50
+              history-delete-duplicates t
+              savehist-save-minibuffer-history t
+              savehist-additional-variables '(kill-ring
+                                              mark-ring
+                                              global-mark-ring
+                                              search-ring
+                                              regexp-search-ring
+                                              compile-command
+                                              extended-command-history))
+
+(savehist-mode 1)
+(recentf-mode 1)
+(save-place-mode 1)
+
+(global-set-key (kbd "C-z r") 'gabriel-open-recent-file)
+#+END_SRC
+
+* IBuffer
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-ibuffer-filter-group-by-project (project)
+  "Filter ibuffer group by project"
+  (let ((name      (file-name-nondirectory (directory-file-name project)))
+        (directory (expand-file-name project)))
+    `(,name (filename . ,directory))))
+
+(defun gabriel-ibuffer-filter-groups-by-project ()
+  "Filter ibuffer groups by project"
+  (mapcar `gabriel-ibuffer-filter-group-by-project
+          (gabriel-project-list)))
+
+(defun gabriel-ibuffer-activate-filter-groups ()
+  "Activate ibuffer filter groups"
+  (setq ibuffer-saved-filter-groups
+        (list (cons "Default"
+                    (append '(("Dired" (mode . dired-mode))
+                              ("Terminal" (or (mode . eshell-mode)
+                                              (mode . shell-mode)
+                                              (mode . term-mode))))
+                            (gabriel-ibuffer-filter-groups-by-project)))))
+  (ibuffer-switch-to-saved-filter-groups "Default"))
+
+(setq-default ibuffer-display-summary nil
+              ibuffer-show-empty-filter-groups nil
+              ibuffer-default-sorting-mode 'alphabetic)
+
+(add-hook 'ibuffer-mode-hook 'ibuffer-auto-mode)
+(add-hook 'ibuffer-hook 'gabriel-ibuffer-activate-filter-groups)
+
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+#+END_SRC
+
+* IMenu
+#+BEGIN_SRC emacs-lisp
+(setq-default imenu-use-markers t
+              imenu-auto-rescan t
+              imenu-max-item-length 100
+              imenu-use-popup-menu nil
+              imenu-space-replacement " "
+              imenu-level-separator "/")
+#+END_SRC
+
+* Indent
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-indent-buffer ()
+  "Indent buffer"
+  (interactive)
+  (indent-region (point-min)
+                 (point-max)))
+
+(setq-default tab-width 4
+              tab-always-indent t
+              indent-tabs-mode nil)
+
+(global-set-key (kbd "C-z i b") 'gabriel-indent-buffer)
+#+END_SRC
+
+* Kill Ring
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-copy-word ()
+  "Copy word"
+  (interactive)
+  (save-excursion
+    (forward-char 1)
+    (backward-word)
+    (mark-word (or current-prefix-arg 1))
+    (kill-ring-save (region-beginning) (region-end))
+    (message "Word saved to kill-ring")))
+
+(defun gabriel-copy-line ()
+  "Copy line"
+  (interactive)
+  (save-excursion
+    (let* ((arg (or current-prefix-arg 0)))
+      (funcall (if (>= arg 0) 'move-beginning-of-line 'move-end-of-line) 1)
+      (set-mark (point))
+      (forward-line (if (> arg 0) (- arg 1) (if (< arg 0) (+ arg 1) 0)))
+      (funcall (if (>= arg 0) 'move-end-of-line 'move-beginning-of-line) 1)
+      (kill-ring-save (region-beginning) (region-end))
+      (message "Line saved to kill-ring"))))
+
+(defun gabriel-copy-function ()
+  "Copy function"
+  (interactive)
+  (save-excursion
+    (mark-defun)
+    (kill-ring-save (region-beginning) (region-end))
+    (message "Function saved to kill-ring")))
+
+(defun gabriel-copy-buffer ()
+  "Copy buffer"
+  (interactive)
+  (save-excursion
+    (mark-whole-buffer)
+    (kill-ring-save (region-beginning) (region-end))
+    (message "Buffer saved to kill-ring")))
+
+(defun gabriel-yank-pop ()
+  "Yank or yank pop"
+  (interactive)
+  (if (not (eq last-command 'yank))
+      (yank)
+    (yank-pop)))
+
+(setq-default mouse-yank-at-point t
+              kill-do-not-save-duplicates t
+              save-interprogram-paste-before-kill t)
+
+(global-set-key (kbd "C-z c w") 'gabriel-copy-word)
+(global-set-key (kbd "C-z c l") 'gabriel-copy-line)
+(global-set-key (kbd "C-z c f") 'gabriel-copy-function)
+(global-set-key (kbd "C-z c b") 'gabriel-copy-buffer)
+(global-set-key (kbd "M-y") 'gabriel-yank-pop)
+#+END_SRC
+
+* Line
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-line-pulse ()
+  "Pulse current line"
+  (interactive)
+  (pulse-momentary-highlight-one-line (point) 'region))
+
+(setq-default display-line-numbers-major-tick 0
+              display-line-numbers-minor-tick 0
+              hl-line-sticky-flag nil
+              truncate-lines t
+              line-spacing 1)
+
+(global-hl-line-mode -1)
+
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+
+(global-set-key (kbd "C-z C-z") 'gabriel-line-pulse)
+#+END_SRC
+
+* Mark
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-mark-delim (open close)
+  "Mark between delimiters"
+  (let ((start (save-excursion (gabriel-go-prev-delim open close)))
+        (end   (save-excursion (gabriel-go-next-delim open close))))
+    (goto-char start)
+    (set-mark-command nil)
+    (goto-char end)))
+
+(defun gabriel-mark-parentheses ()
+  "Mark between parentheses"
+  (interactive)
+  (gabriel-mark-delim "(" ")"))
+
+(defun gabriel-mark-braces ()
+  "Mark between braces"
+  (interactive)
+  (gabriel-mark-delim "{" "}"))
+
+(defun gabriel-mark-brackets ()
+  "Mark between brackets"
+  (interactive)
+  (gabriel-mark-delim "[" "]"))
+
+(defun gabriel-mark-double-quotes ()
+  "Mark between double quotes"
+  (interactive)
+  (gabriel-mark-delim "\"" "\""))
+
+(defun gabriel-mark-single-quotes ()
+  "Mark between single quotes"
+  (interactive)
+  (gabriel-mark-delim "'" "'"))
+
+(defun gabriel-mark-angle-brackets ()
+  "Mark between angle brackets"
+  (interactive)
+  (gabriel-mark-delim "<" ">"))
+
+(defun gabriel-mark-word ()
+  "Mark word"
+  (interactive)
+  (when (not (use-region-p))
+    (backward-to-word 1)
+    (forward-word 1)
+    (backward-word 1))
+  (mark-word 1 t))
+
+(defun gabriel-mark-line ()
+  "Mark line"
+  (interactive)
+  (when (not (use-region-p))
+    (beginning-of-line)
+    (set-mark-command nil)
+    (end-of-line)))
+
+(defun gabriel-mark-expand ()
+  "Expand mark to fill whole start and end lines"
+  (interactive)
+  (let ((line-start (line-number-at-pos (region-beginning)))
+        (line-end   (line-number-at-pos (region-end))))
+    (goto-line line-start)
+    (set-mark-command nil)
+    (goto-line line-end)
+    (move-end-of-line 1)))
+
+(defun gabriel-mark ()
+  "Mark stuff"
+  (interactive)
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "(") 'gabriel-mark-parentheses)
+    (define-key map (kbd "{") 'gabriel-mark-braces)
+    (define-key map (kbd "[") 'gabriel-mark-brackets)
+    (define-key map (kbd "\"") 'gabriel-mark-double-quotes)
+    (define-key map (kbd "'") 'gabriel-mark-single-quotes)
+    (define-key map (kbd "<") 'gabriel-mark-angle-brackets)
+    (define-key map (kbd "l") 'gabriel-mark-line)
+    (define-key map (kbd "w") 'gabriel-mark-word)
+    (define-key map (kbd "f") 'mark-defun)
+    (define-key map (kbd "p") 'mark-paragraph)
+    (define-key map (kbd "b") 'mark-whole-buffer)
+    (define-key map (kbd "d") 'gabriel-duplicate)
+    (define-key map (kbd "c") 'comment-region)
+    (define-key map (kbd "e") 'gabriel-mark-expand)
+    (set-transient-map map t)))
+
+(delete-selection-mode 1)
+(transient-mark-mode 1)
+
+(global-set-key (kbd "C-z m") 'gabriel-mark)
+#+END_SRC
+
+* Minibuffer
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-minibuffer-help (beg end len)
+  "Show minibuffer help"
+  (minibuffer-completion-help))
+
+(defun gabriel-minibuffer-setup ()
+  "Setup minibuffer"
+  (when minibuffer-completion-table
+    (add-hook 'after-change-functions 'gabriel-minibuffer-help nil t)
+    (minibuffer-completion-help)))
+
+(defun gabriel-minibuffer-complete ()
+  "Complete minibuffer input"
+  (interactive)
+  (setq inhibit-modification-hooks t)
+  (minibuffer-complete)
+  (setq inhibit-modification-hooks nil)
+  (minibuffer-completion-help))
+
+(defun gabriel-completion-list ()
+  "Display completion list"
+  (beginning-of-buffer)
+  (while (re-search-forward "\t" nil t)
+    (replace-match "\n")))
+
+(setq-default completion-styles '(partial-completion)
+              completion-category-defaults nil
+              completion-show-help nil
+              completions-format 'horizontal
+              enable-recursive-minibuffers t
+              resize-mini-windows t)
+
+(minibuffer-depth-indicate-mode 1)
+(minibuffer-electric-default-mode 1)
+(file-name-shadow-mode 1)
+(ido-mode -1)
+(fido-mode -1)
+(icomplete-mode -1)
+
+(add-hook 'completion-list-mode-hook 'gabriel-completion-list)
+(add-hook 'minibuffer-setup-hook 'gabriel-minibuffer-setup)
+
+(define-key minibuffer-local-must-match-map (kbd "<tab>") 'gabriel-minibuffer-complete)
+(define-key minibuffer-local-must-match-map (kbd "<SPC>") 'gabriel-minibuffer-complete)
+(define-key minibuffer-local-completion-map (kbd "<tab>") 'gabriel-minibuffer-complete)
+(define-key minibuffer-local-completion-map (kbd "<SPC>") 'gabriel-minibuffer-complete)
+#+END_SRC
+* Navigation
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-go-prev-word (word)
+  "Go to previous word"
+  (ignore-errors (search-backward word)))
+
+(defun gabriel-go-next-word (word)
+  "Go to next word"
+  (ignore-errors (search-forward word)))
+
+(defun gabriel-go-prev-delim (open close)
+  "Go to previous delimiter"
+  (let ((prev-open  (save-excursion (gabriel-go-prev-word open)))
+        (prev-close (save-excursion (gabriel-go-prev-word close))))
+    (while (and prev-close (> prev-close prev-open))
+      (setq prev-open  (save-excursion (goto-char prev-open)  (gabriel-go-prev-word open)))
+      (setq prev-close (save-excursion (goto-char prev-close) (gabriel-go-prev-word close))))
+    (goto-char prev-open)))
+
+(defun gabriel-go-next-delim (open close)
+  "Go to next delimiter"
+  (let ((next-open  (save-excursion (gabriel-go-next-word open)))
+        (next-close (save-excursion (gabriel-go-next-word close))))
+    (while (and next-open (< next-open next-close))
+      (setq next-open  (save-excursion (goto-char next-open)  (gabriel-go-next-word open)))
+      (setq next-close (save-excursion (goto-char next-close) (gabriel-go-next-word close))))
+    (goto-char next-close)))
+
+(defun gabriel-go-open-parentheses ()
+  "Go to open parentheses"
+  (interactive)
+  (gabriel-go-prev-delim "(" ")"))
+
+(defun gabriel-go-close-parentheses ()
+  "Go to close parentheses"
+  (interactive)
+  (gabriel-go-next-delim "(" ")"))
+
+(defun gabriel-go-open-braces ()
+  "Go to open braces"
+  (interactive)
+  (gabriel-go-prev-delim "{" "}"))
+
+(defun gabriel-go-close-braces ()
+  "Go to close braces"
+  (interactive)
+  (gabriel-go-next-delim "{" "}"))
+
+(defun gabriel-go-open-brackets ()
+  "Go to open brackets"
+  (interactive)
+  (gabriel-go-prev-delim "[" "]"))
+
+(defun gabriel-go-close-brackets ()
+  "Go to close brackets"
+  (interactive)
+  (gabriel-go-next-delim "[" "]"))
+
+(defun gabriel-go-open-angle-brackets ()
+  "Go to open angle-brackets"
+  (interactive)
+  (gabriel-go-prev-delim "<" ">"))
+
+(defun gabriel-go-close-angle-brackets ()
+  "Go to close angle-brackets"
+  (interactive)
+  (gabriel-go-prev-delim "<" ">"))
+
+(defun gabriel-go-delim ()
+  "Go to next or prev delim"
+  (interactive)
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "(") 'gabriel-go-open-parentheses)
+    (define-key map (kbd ")") 'gabriel-go-close-parentheses)
+    (define-key map (kbd "{") 'gabriel-go-open-braces)
+    (define-key map (kbd "}") 'gabriel-go-close-braces)
+    (define-key map (kbd "[") 'gabriel-go-open-brackets)
+    (define-key map (kbd "]") 'gabriel-go-close-brackets)
+    (define-key map (kbd "<") 'gabriel-go-open-angle-brackets)
+    (define-key map (kbd ">") 'gabriel-go-close-angle-brackets)
+    (set-transient-map map t)))
+
+(global-subword-mode 1)
+
+(global-set-key (kbd "C-z g") 'gabriel-go-delim)
+(global-set-key (kbd "M-n") 'scroll-up-line)
+(global-set-key (kbd "M-p") 'scroll-down-line)
+(global-set-key (kbd "C-z i m") 'imenu)
+#+END_SRC
+
+* Org Mode
+#+BEGIN_SRC emacs-lisp
+(setq-default org-src-tab-acts-natively t
+              org-log-done 'time
+              org-directory "~/org"
+              org-agenda-files '("~/org")
+              org-imenu-depth 8
+              org-export-dispatch-use-expert-ui nil
+              org-adapt-indentation nil
+              org-fontify-done-headline nil
+              org-agenda-span 7
+              org-agenda-start-on-weekday 1
+              org-agenda-confirm-kill t
+              org-agenda-show-all-dates t
+              org-agenda-include-diary t
+              org-src-fontify-natively t
+              org-src-preserve-indentation t
+              org-agenda-time-leading-zero t
+              org-agenda-timegrid-use-ampm nil
+              org-edit-src-content-indentation 0
+              org-edit-src-persistent-message nil
+              org-agenda-window-setup 'current-window
+              org-src-window-setup 'current-window)
+#+END_SRC
+
+* Packages
+#+BEGIN_SRC emacs-lisp
+(setq-default package-archives '(("gnu"   . "http://elpa.gnu.org/packages/")
+                                 ("melpa" . "http://melpa.org/packages/")))
+
+(package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(dolist (package '(clojure-mode
+                   cider
+                   markdown-mode
+                   json-mode))
+  (unless (package-installed-p package)
+    (package-install package)))
+#+END_SRC
+
+* Paren Mode
+#+BEGIN_SRC emacs-lisp
+(setq-default show-paren-style 'parenthesis
+              show-paren-delay 0)
+
+(show-paren-mode 1)
+#+END_SRC
+
+* Project
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-project-buffer-list (&optional project)
+  "Returns project buffer list optionally filtered by project"
+  (seq-filter (if project
+                  (apply-partially 'gabriel-buffer-from-project-p project)
+                'gabriel-buffer-is-project-p)
+              (buffer-list)))
+
+(defun gabriel-project-list ()
+  "Returns a list of projects"
+  (delete-dups (delq nil
+                     (mapcar (lambda (buffer) (with-current-buffer buffer (vc-root-dir)))
+                             (gabriel-project-buffer-list)))))
+#+END_SRC
+
+* Quit
+#+BEGIN_SRC emacs-lisp
+(setq-default confirm-kill-emacs nil)
+
+(define-key global-map (kbd "<escape>") 'keyboard-quit)
+(define-key minibuffer-local-must-match-map (kbd "<escape>") 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map (kbd "<escape>") 'minibuffer-keyboard-quit)
+(define-key isearch-mode-map  (kbd "<escape>") 'isearch-cancel)
+#+END_SRC
+
+* Scratch
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-scratch-save ()
+  "Save scratch buffer to file"
+  (interactive)
+  (with-current-buffer (get-buffer "*scratch*")
+    (write-region (buffer-string) nil (expand-file-name "scratch" user-emacs-directory))))
+
+(defun gabriel-scratch-load ()
+  "Load scratch buffer from file"
+  (interactive)
+  (when (file-exists-p (expand-file-name "scratch" user-emacs-directory))
+    (with-current-buffer (get-buffer "*scratch*")
+      (erase-buffer)
+      (insert-file-contents (expand-file-name "scratch" user-emacs-directory)))))
+
+(defun gabriel-scratch-keep ()
+  "Keep scratch always open"
+  (not (equal (buffer-name) "*scratch*")))
+
+(add-hook 'kill-buffer-query-functions #'gabriel-scratch-keep)
+(add-hook 'after-init-hook #'gabriel-scratch-load)
+(add-hook 'kill-emacs-hook #'gabriel-scratch-save)
+#+END_SRC
+
+* Scroll
+#+BEGIN_SRC emacs-lisp
+(setq-default scroll-margin 0
+              scroll-conservatively 1
+              scroll-preserve-screen-position 1)
+#+END_SRC
+
+* Search
+#+BEGIN_SRC emacs-lisp
+(setq-default search-whitespace-regexp ".*?"
+              isearch-lazy-count t
+              isearch-lazy-highlight t
+              lazy-highlight-initial-delay 0
+              lazy-count-prefix-format "(%s/%s) "
+              isearch-allow-scroll 'unlimited)
+#+END_SRC
+
+* Tab Bar
+#+BEGIN_SRC emacs-lisp
+(setq-default tab-bar-close-button-show nil
+              tab-bar-new-button-show nil
+              tab-bar-tab-hints t
+              tab-bar-show t
+              tab-bar-tab-name-function 'tab-bar-tab-name-current)
+
+(tab-rename "main")
+(tab-bar-mode 1)
+#+END_SRC
+
+* Theme
+** Font
+#+BEGIN_SRC emacs-lisp
+(setq-default x-underline-at-descent-line t
+              underline-minimum-offset 1)
+
+(let ((monospace "Hack-10")
+      (sans-serif "DejaVu Sans-10"))
+  (set-face-attribute 'default nil :font monospace)
+  (set-face-attribute 'fixed-pitch nil :font monospace)
+  (set-face-attribute 'variable-pitch nil :font sans-serif))
+
+(variable-pitch-mode -1)
+#+END_SRC
+
+** Mode Line
+#+BEGIN_SRC emacs-lisp
+(defface gabriel-mode-line-directory-face
+  '() "Mode line directory face")
+
+(defface gabriel-mode-line-project-face
+  '() "Mode line project face")
+
+(defface gabriel-mode-line-buffer-face
+  '() "Mode line buffer face")
+
+(defface gabriel-mode-line-buffer-modified-face
+  '() "Mode line buffer modified face")
+
+(defface gabriel-mode-line-narrow-face
+  '() "Mode line narrow face")
+
+(defface gabriel-mode-line-appt-face
+  '() "Mode line appointment face")
+
+(defface gabriel-mode-line-read-only-face
+  '() "Mode line read-only face")
+
+(defface gabriel-mode-line-macro-face
+  '() "Mode line macro face")
+
+(defface gabriel-mode-line-major-mode-face
+  '() "Mode line major mode face")
+
+(defun gabriel-mode-line-directory-prefix ()
+  "Returns directory prefix for mode line"
+  (propertize (cond ((and buffer-file-name (vc-root-dir)) (file-name-directory (substring (vc-root-dir) 0 -1)))
+                    (buffer-file-name (abbreviate-file-name default-directory))
+                    (t ""))
+              'face
+              'gabriel-mode-line-directory-face))
+
+(defun gabriel-mode-line-project ()
+  "Returns project for mode line"
+  (when (and buffer-file-name (vc-root-dir))
+    (propertize (file-name-nondirectory (substring (vc-root-dir) 0 -1))
+                'face
+                'gabriel-mode-line-project-face)))
+
+(defun gabriel-mode-line-directory-suffix ()
+  "Returns directory suffix for mode line"
+  (when (and buffer-file-name (vc-root-dir))
+    (propertize (concat "/"
+                        (file-name-directory (substring (abbreviate-file-name buffer-file-name)
+                                                        (length (vc-root-dir)))))
+                'face
+                'gabriel-mode-line-directory-face)))
+
+(defun gabriel-mode-line-buffer ()
+  "Returns buffer for mode line"
+  (propertize (if buffer-file-name
+                  (file-name-nondirectory buffer-file-name)
+                (buffer-name))
+              'face
+              (if (and buffer-file-name (buffer-modified-p))
+                  'gabriel-mode-line-buffer-modified-face
+                'gabriel-mode-line-buffer-face)))
+
+(defun gabriel-mode-line-appt ()
+  "Returns appointment for mode line"
+  (when appt-mode-string
+    (propertize (concat "[" (string-trim appt-mode-string) "]")
+                'face
+                'gabriel-mode-line-appt-face)))
+
+(defun gabriel-mode-line-read-only ()
+  "Returns read only for mode line"
+  (propertize (if buffer-read-only " [RO]" "")
+              'face
+              'gabriel-mode-line-read-only-face))
+
+(defun gabriel-mode-line-narrow ()
+  "Returns narrow for mode line"
+  (propertize (if (buffer-narrowed-p) " [Narrow]" "")
+              'face
+              'gabriel-mode-line-narrow-face))
+
+(defun gabriel-mode-line-macro ()
+  "Returns macro for mode line"
+  (propertize (if defining-kbd-macro " [Macro]" "")
+              'face
+              'gabriel-mode-line-macro-face))
+
+(defun gabriel-mode-line-major-mode ()
+  "Returns major mode for mode line"
+  (propertize (concat " ["
+                      (capitalize (substring (symbol-name major-mode) 0 -5))
+                      "]")
+              'face
+              'gabriel-mode-line-major-mode-face))
+
+(defun gabriel-mode-line-process ()
+  "Returns process for mode line"
+  (when mode-line-process
+    (concat " ["
+            (string-trim (format-mode-line mode-line-process))
+            "]")))
+
+(defun gabriel-mode-line-format ()
+  "Format mode line"
+  (let* ((left (concat (gabriel-mode-line-directory-prefix)
+                       (gabriel-mode-line-project)
+                       (gabriel-mode-line-directory-suffix)
+                       (gabriel-mode-line-buffer)))
+         (right (concat (gabriel-mode-line-appt)
+                        (gabriel-mode-line-read-only)
+                        (gabriel-mode-line-narrow)
+                        (gabriel-mode-line-macro)
+                        (gabriel-mode-line-major-mode)
+                        (gabriel-mode-line-process)))
+         (width (- (window-width)
+                   (length (format-mode-line left))
+                   (length (format-mode-line right))
+                   1)))
+    (format (format "%%s%%%ds%%s" width) left " " right)))
+
+(setq-default mode-line-format '(((:eval (gabriel-mode-line-format)))))
+#+END_SRC
+
+** Style
+#+BEGIN_SRC emacs-lisp
+(require 'color)
+(require 'compile)
+(require 'diff-mode)
+(require 'xref)
+(require 'sh-script)
+(require 'em-prompt)
+(require 'em-ls)
+(require 'diary-lib)
+
+(let* ((black "#000000")
+       (gray "#666666")
+       (white "#ffffff")
+       (red "#ea2020")
+       (green "#009688")
+       (blue "#2196f3")
+       (magenta "#7a57b9")
+       (cyan "#8bc34a")
+       (pink "#f32395")
+       (yellow "#ff9800")
+       (orange "#f77e2d")
+       (primary-background black)
+       (primary-foreground white)
+       (secondary-background (color-lighten-name primary-background 5))
+       (secondary-foreground gray)
+       (highlight blue)
+       (good green)
+       (warning yellow)
+       (bad red))
+
+  (set-face-attribute 'default nil :background primary-background :foreground primary-foreground)
+  (set-face-attribute 'hl-line nil :background secondary-background :inherit nil)
+  (set-face-attribute 'cursor nil :background highlight)
+  (set-face-attribute 'trailing-whitespace nil :background bad)
+  (set-face-attribute 'region nil :background warning :foreground primary-background)
+  (set-face-attribute 'button nil :foreground highlight :weight 'bold)
+  (set-face-attribute 'highlight nil :background yellow :foreground primary-background)
+  (set-face-attribute 'secondary-selection nil :foreground primary-foreground :background primary-background)
+  (set-face-attribute 'shadow nil :foreground gray)
+  (set-face-attribute 'match nil :background yellow :foreground primary-background)
+  (set-face-attribute 'warning nil :foreground warning)
+  (set-face-attribute 'error nil :foreground bad)
+
+  (set-face-attribute 'link nil :foreground blue)
+  (set-face-attribute 'link-visited nil :foreground magenta)
+
+  (set-face-attribute 'show-paren-match nil :background green :foreground primary-background :weight 'bold)
+  (set-face-attribute 'show-paren-mismatch nil :background red :foreground primary-background :weight 'bold)
+
+  (set-face-attribute 'vertical-border nil :foreground secondary-background)
+  (set-face-attribute 'line-number nil :background secondary-background :foreground secondary-foreground)
+  (set-face-attribute 'line-number-current-line nil :background secondary-background :foreground highlight :weight 'bold)
+  (set-face-attribute 'fringe nil :background secondary-background :foreground secondary-foreground)
+  (set-face-attribute 'window-divider nil :foreground secondary-background)
+  (set-face-attribute 'window-divider-first-pixel nil :foreground secondary-background)
+  (set-face-attribute 'window-divider-last-pixel nil :foreground secondary-background)
+
+  (set-face-attribute 'isearch nil :background blue :foreground primary-background :weight 'bold)
+  (set-face-attribute 'isearch-fail nil :background red :foreground primary-background :weight 'bold)
+  (set-face-attribute 'lazy-highlight nil :background green :foreground primary-background :weight 'bold)
+
+  (set-face-attribute 'mode-line nil :background secondary-background :foreground primary-foreground :box `(:line-width 5 :color ,secondary-background))
+  (set-face-attribute 'mode-line-inactive nil :background secondary-background :foreground primary-foreground :box `(:line-width 5 :color ,secondary-background))
+
+  (set-face-attribute 'minibuffer-prompt nil :foreground blue :weight 'bold)
+  (set-face-attribute 'completions-common-part nil :background green :foreground primary-background :weight 'bold)
+  (set-face-attribute 'completions-first-difference nil :background blue :foreground primary-background :weight 'bold)
+
+  (set-face-attribute 'font-lock-builtin-face nil :foreground magenta :weight 'bold)
+  (set-face-attribute 'font-lock-comment-face nil :foreground gray)
+  (set-face-attribute 'font-lock-comment-delimiter-face nil :foreground gray)
+  (set-face-attribute 'font-lock-constant-face nil :foreground magenta :weight 'bold)
+  (set-face-attribute 'font-lock-doc-face nil :foreground gray)
+  (set-face-attribute 'font-lock-function-name-face nil :foreground green)
+  (set-face-attribute 'font-lock-keyword-face nil :foreground magenta :weight 'bold)
+  (set-face-attribute 'font-lock-negation-char-face nil :foreground yellow)
+  (set-face-attribute 'font-lock-preprocessor-face nil :foreground magenta)
+  (set-face-attribute 'font-lock-regexp-grouping-construct nil :foreground yellow)
+  (set-face-attribute 'font-lock-regexp-grouping-backslash nil :foreground yellow)
+  (set-face-attribute 'font-lock-string-face nil :foreground blue)
+  (set-face-attribute 'font-lock-type-face nil :foreground orange)
+  (set-face-attribute 'font-lock-variable-name-face nil :foreground pink)
+  (set-face-attribute 'font-lock-warning-face nil :foreground orange)
+
+  (set-face-attribute 'compilation-mode-line-exit nil :foreground green :weight 'bold)
+  (set-face-attribute 'compilation-mode-line-fail nil :foreground red :weight 'bold)
+  (set-face-attribute 'compilation-mode-line-run nil :foreground yellow :weight 'bold)
+  (set-face-attribute 'compilation-error nil :foreground red :weight 'bold)
+  (set-face-attribute 'compilation-warning nil :foreground yellow :weight 'bold)
+  (set-face-attribute 'compilation-info nil :foreground blue :weight 'bold)
+
+  (set-face-attribute 'sh-heredoc nil :foreground green :weight 'normal)
+
+  (set-face-attribute 'org-block nil :foreground primary-foreground)
+  (set-face-attribute 'org-block-begin-line nil :foreground orange :weight 'bold)
+  (set-face-attribute 'org-block-end-line nil :foreground orange :weight 'bold)
+  (set-face-attribute 'org-level-1 nil :foreground blue :weight 'bold)
+  (set-face-attribute 'org-level-2 nil :foreground green :weight 'bold)
+  (set-face-attribute 'org-level-3 nil :foreground magenta :weight 'bold)
+  (set-face-attribute 'org-level-4 nil :foreground yellow :weight 'bold)
+  (set-face-attribute 'org-level-5 nil :foreground blue :weight 'bold)
+  (set-face-attribute 'org-level-6 nil :foreground green :weight 'bold)
+  (set-face-attribute 'org-level-7 nil :foreground magenta :weight 'bold)
+  (set-face-attribute 'org-level-8 nil :foreground yellow :weight 'bold)
+  (set-face-attribute 'org-link nil :foreground blue)
+  (set-face-attribute 'org-todo nil :foreground bad :weight 'bold)
+  (set-face-attribute 'org-done nil :foreground good :weight 'bold)
+  (set-face-attribute 'org-date nil :foreground yellow)
+  (set-face-attribute 'org-drawer nil :foreground orange :weight 'bold)
+  (set-face-attribute 'org-meta-line nil :foreground gray)
+  (set-face-attribute 'org-special-keyword nil :foreground magenta :weight 'bold)
+  (set-face-attribute 'org-agenda-structure nil :foreground gray)
+  (set-face-attribute 'org-table nil :foreground primary-foreground)
+  (set-face-attribute 'org-agenda-date nil :foreground gray :weight 'normal)
+  (set-face-attribute 'org-agenda-date-weekend nil :foreground gray :weight 'normal)
+  (set-face-attribute 'org-agenda-date-today nil :foreground gray :slant 'normal :weight 'normal)
+  (set-face-attribute 'org-upcoming-deadline nil :foreground primary-foreground)
+  (set-face-attribute 'org-warning nil :foreground warning)
+  (set-face-attribute 'org-scheduled nil :foreground good)
+
+  (set-face-attribute 'diff-header nil :background primary-background :foreground gray)
+  (set-face-attribute 'diff-file-header nil :background primary-background :foreground blue)
+  (set-face-attribute 'diff-removed nil :background (color-darken-name red 30))
+  (set-face-attribute 'diff-refine-removed nil :background (color-darken-name red 22))
+  (set-face-attribute 'diff-added nil :background (color-darken-name green 20))
+  (set-face-attribute 'diff-refine-added nil :background (color-darken-name green 15))
+
+  (set-face-attribute 'xref-match nil :background yellow :foreground primary-background)
+
+  (set-face-attribute 'tab-bar nil :background secondary-background)
+  (set-face-attribute 'tab-bar-tab nil :background secondary-background :foreground highlight :weight 'bold :box `(:line-width 5 :color ,secondary-background))
+  (set-face-attribute 'tab-bar-tab-inactive nil :background secondary-background :foreground secondary-foreground :weight 'normal :box `(:color ,secondary-background))
+
+  (set-face-attribute 'eshell-prompt nil :foreground highlight)
+  (set-face-attribute 'eshell-ls-directory nil :foreground green)
+  (set-face-attribute 'eshell-ls-backup nil :foreground orange)
+  (set-face-attribute 'eshell-ls-archive nil :foreground pink)
+  (set-face-attribute 'eshell-ls-executable nil :foreground magenta)
+  (set-face-attribute 'eshell-ls-symlink nil :foreground yellow)
+  (set-face-attribute 'eshell-ls-readonly nil :foreground gray)
+  (set-face-attribute 'eshell-ls-missing nil :foreground red)
+
+  (set-face-attribute 'calendar-month-header nil :foreground green :weight 'bold)
+  (set-face-attribute 'calendar-weekday-header nil :foreground gray :weight 'bold)
+  (set-face-attribute 'calendar-weekend-header nil :foreground gray :weight 'bold)
+
+  (set-face-attribute 'diary nil :foreground yellow :weight 'bold)
+  (set-face-attribute 'diary-time nil :foreground magenta :weight 'bold)
+
+  (set-face-attribute 'gabriel-mode-line-directory-face nil :foreground primary-foreground)
+  (set-face-attribute 'gabriel-mode-line-project-face nil :foreground good :weight 'bold)
+  (set-face-attribute 'gabriel-mode-line-buffer-face nil :foreground highlight :weight 'bold)
+  (set-face-attribute 'gabriel-mode-line-buffer-modified-face nil :foreground bad :weight 'bold)
+  (set-face-attribute 'gabriel-mode-line-narrow-face nil :foreground warning :weight 'bold)
+  (set-face-attribute 'gabriel-mode-line-appt-face nil :foreground bad :weight 'bold)
+  (set-face-attribute 'gabriel-mode-line-read-only-face nil :foreground warning :weight 'bold)
+  (set-face-attribute 'gabriel-mode-line-macro-face nil :foreground warning :weight 'bold)
+  (set-face-attribute 'gabriel-mode-line-major-mode-face nil :foreground magenta :weight 'bold))
+#+END_SRC
+
+* Tooltip
+#+BEGIN_SRC emacs-lisp
+(tooltip-mode -1)
+#+END_SRC
+
+* User information
+#+BEGIN_SRC emacs-lisp
+(setq-default user-full-name "Gabriel do Nascimento Ribeiro"
+              user-mail-address "gabriel376@hotmail.com")
+#+END_SRC
+
+* Whitespace
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-show-trailing-whitespace ()
+  "Show trailing whitespace"
+  (setq show-trailing-whitespace 1))
+
+(add-hook 'prog-mode-hook 'gabriel-show-trailing-whitespace)
+(add-hook 'org-mode-hook 'gabriel-show-trailing-whitespace)
+#+END_SRC
+
+* Window
+#+BEGIN_SRC emacs-lisp
+(defun gabriel-window-delete ()
+  "Delete window"
+  (interactive)
+  (delete-window)
+  (balance-windows))
+
+(defun gabriel-window-split-below ()
+  "Split window below"
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+
+(defun gabriel-window-split-right ()
+  "Split window right"
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+
+(setq-default window-divider-default-right-width 10
+              window-divider-default-bottom-width 0
+              window-divider-default-places 'right-only)
+
+(window-divider-mode 1)
+(winner-mode 1)
+(temp-buffer-resize-mode 1)
+(windmove-default-keybindings 'control)
+
+(global-set-key (kbd "C-x 0") 'gabriel-window-delete)
+(global-set-key (kbd "C-x 2") 'gabriel-window-split-below)
+(global-set-key (kbd "C-x 3") 'gabriel-window-split-right)
+(global-set-key (kbd "C-z w s") 'window-swap-states)
+#+END_SRC
+
