@@ -7,6 +7,7 @@ read -e -p "country: " -i "BR" country
 read -e -p "username: " -i "gabriel" username
 read -e -p "timezone: " -i "America/Sao_Paulo" timezone
 read -e -p "locale: " -i "en_US.UTF-8" locale
+read -e -p "hostname: " -i "archlinux" hostname
 
 timedatectl set-ntp true
 
