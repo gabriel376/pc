@@ -11,7 +11,7 @@ read -e -p "hostname: " -i "archlinux" hostname
 
 timedatectl set-ntp true
 
-wget -O /etc/pacman.d/mirrorlist https://www.archlinux.org/mirrorlist/?country=${country}
+curl -o /etc/pacman.d/mirrorlist https://www.archlinux.org/mirrorlist/?country=${country}
 sed -i 's/^#\(Server\)/\1/' /etc/pacman.d/mirrorlist
 
 if [[ ${boot} == "BIOS" ]]; then
